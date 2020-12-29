@@ -1,0 +1,26 @@
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
+}

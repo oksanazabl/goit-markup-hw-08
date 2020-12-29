@@ -1,0 +1,71 @@
+@import "../utils/variables";
+
+.hero {
+  display: flex;
+
+  min-height: 600px;
+  align-items: center;
+  flex-direction: column;
+
+  & .container {
+    min-height: 600px;
+    width: 1600px;
+    background-color: var(--b-dark);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-descr {
+    margin-top: 207px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main-title {
+  color: var(--txt-light);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 696px;
+  margin: 0;
+}
+
+.btn-hero {
+  color: var(--txt-light);
+  margin-top: 30px;
+  padding: 10px 32px;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  transition: color 250ms var(--timer);
+
+  &:hover {
+    color: var(--txt-dark);
+    cursor: pointer;
+
+    transform: opasity;
+  }
+
+  &:focus {
+    color: var(--txt-dark);
+    cursor: pointer;
+
+    transform: opasity;
+  }
+}
