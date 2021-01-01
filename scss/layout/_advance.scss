@@ -1,0 +1,51 @@
+@import "../units/variables";
+
+.description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+  padding-right: 10px;
+
+  &-title {
+    color: var(--txt-dark);
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+
+.principle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 120px;
+    background-color: var(--b-middle);
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+  }
+
+  &-example {
+    width: 70px;
+    height: 70px;
+  }
+  &:first-child {
+    margin-top: 60px;
+  }
+  &:last-child {
+    margin-bottom: 60px;
+  }
+  &:not(:last-child) {
+    margin-top: 30px;
+  }
+}

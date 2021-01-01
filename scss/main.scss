@@ -1,5 +1,15 @@
-@import "./utils/normolize";
-@import "./utils/fonts";
-@import "./utils/variables";
+@import "./units/normolize";
+@import "./units/fonts";
+@import "./base/common";
+@import "./units/variables";
+@import "./base/visually-hidden";
+@import "./components/container";
+@import "./components/btn";
+@import "./components/logo";
 
-@import "./layout/form";
+@import "./components/modal";
+@import "./components/socialMedia";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advance";
