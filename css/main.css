@@ -408,6 +408,20 @@ img {
     height: 31px;
   }
 }
+.section {
+  padding: 60px 0;
+}
+
+.secodary-title {
+  color: var(--txt-dark);
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.172;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
 :root {
   /*baclgraund color*/
   --b-dark: #2f303a;
@@ -746,6 +760,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 450px;
 }
 .principle-icon {
   display: -webkit-box;
@@ -767,13 +782,241 @@ img {
   width: 70px;
   height: 70px;
 }
-.principle:first-child {
-  margin-top: 60px;
-}
-.principle:last-child {
-  margin-bottom: 60px;
-}
 .principle:not(:last-child) {
-  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pictures-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.picture {
+  position: relative;
+}
+.picture:not(:last-child) {
+  margin-right: 30px;
+}
+
+.shadow-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.shadow-text-descript {
+  color: var(--txt-light);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team {
+  background-color: var(--b-middle);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.team-card {
+  width: 450px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.worker-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.worker-name {
+  color: var(--txt-dark);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.speciality {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+:root {
+  /*baclgraund color*/
+  --b-dark: #2f303a;
+  --b-middle: #f5f4fa;
+  --b-blue: #2196f3;
+  --b-white: #ffffff;
+  --b-black: #000000;
+  /*text color*/
+  --txt-dark: #212121;
+  --txt-grey: #757575;
+  --txt-light: #ffffff;
+  --txt-bleu: #2196f3;
+  /*icon*/
+  --light: #afb1b8;
+  --white: #ffffff;
+  --accent-background: #2196f3;
+  --dark-background: rgba(255, 255, 255, 0.1);
+  --light-background: #ffffff;
+  /*fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --timer: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.client-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 210px;
+  height: 90px;
+}
+.client-icon:not(:last-child) {
+  margin-right: 30px;
+}
+.client-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  border: 1px solid var(--light);
+  border-radius: 4px;
+}
+.client-link:hover {
+  border: 1px solid var(--accent-background);
+  -webkit-transform: opasity;
+          transform: opasity;
+}
+.client-link:focus {
+  border: 1px solid var(--accent-background);
+  outline: 1px solid #757575;
+  -webkit-transform: opasity;
+          transform: opasity;
+}
+
+.client-logo-icon {
+  width: 89px;
+  height: 52px;
+  fill: var(--light);
+  -webkit-transition: fill 250ms var(--timer);
+  transition: fill 250ms var(--timer);
+}
+.client-link:focus .client-logo-icon, .client-link:hover .client-logo-icon {
+  fill: var(--accent-background);
+  -webkit-transform: opasity;
+          transform: opasity;
 }
 /*# sourceMappingURL=main.css.map */
