@@ -1,0 +1,19 @@
+@import "../utils/variables";
+
+.logo {
+  font-family: var(--secondary-font);
+  color: var(--txt-bleu);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  height: 31px;
+
+  &-dark {
+    color: var(--txt-dark);
+  }
+
+  &-white {
+    color: var(--txt-light);
+  }
+}

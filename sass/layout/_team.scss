@@ -1,13 +1,11 @@
-@import "../units/variables";
+@import "../utils/variables";
 
 .team {
   background-color: var(--b-middle);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  min-height: 648px;
 
   &-card {
-    width: 450px;
+    width: 270px;
 
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -15,9 +13,13 @@
     border-radius: 0px 0px 4px 4px;
 
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-right: 30px;
     }
   }
+}
+
+.card-box {
+  display: flex;
 }
 
 .worker {

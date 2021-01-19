@@ -1,16 +1,15 @@
-@import "./units/normolize";
-@import "./units/fonts";
+@import "./utils/normolize";
+@import "./utils/fonts";
+@import "./utils/variables";
 @import "./base/common";
-@import "./units/variables";
 @import "./base/visually-hidden";
 @import "./components/container";
-@import "./components/btn";
-@import "./components/logo";
 @import "./components/section";
-@import "./base/secondary-title";
-
-@import "./components/modal";
+@import "./components/logo";
+@import "./components/btn";
 @import "./components/socialMedia";
+@import "./components/modal";
+@import "./layout/form";
 
 @import "./layout/header";
 @import "./layout/hero";
@@ -18,3 +17,5 @@
 @import "./layout/ourWork";
 @import "./layout/team";
 @import "./layout/client";
+
+@import "./layout/footer";

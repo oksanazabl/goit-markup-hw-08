@@ -1,4 +1,4 @@
-@import "../units/variables";
+@import "../utils/variables";
 
 *,
 ::after,
@@ -39,16 +39,4 @@ img {
 
 .list {
   list-style: none;
-}
-
-.tablet-element {
-  display: none;
-}
-
-.desktop-element {
-  display: none;
-}
-
-.mobile-element {
-  display: block;
 }

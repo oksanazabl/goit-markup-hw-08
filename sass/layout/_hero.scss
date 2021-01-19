@@ -1,25 +1,30 @@
-@import "../units/variables";
+@import "../utils/variables";
 
 .hero {
-  min-height: 400px;
+  display: flex;
+
+  min-height: 600px;
   align-items: center;
+  flex-direction: column;
 
   & .container {
-    min-height: 400px;
-    width: 480px;
+    min-height: 600px;
+    width: 1600px;
     background-color: var(--b-dark);
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/main/hero_mobile.png);
+      url(../images/main/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
+    flex-direction: column;
     align-items: center;
   }
 
   &-descr {
+    margin-top: 207px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,16 +33,15 @@
 
 .main-title {
   color: var(--txt-light);
-  font-style: normal;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.615;
+  font-size: 44px;
+  line-height: 1.36;
+
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 118px;
-
-  width: 360px;
+  width: 696px;
+  margin: 0;
 }
 
 .btn-hero {
