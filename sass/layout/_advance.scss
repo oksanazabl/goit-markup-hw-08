@@ -1,6 +1,51 @@
 @import "../utils/variables";
 
-.advance {
+.description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+  padding-right: 10px;
+
+  &-title {
+    color: var(--txt-dark);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+
+.principle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 120px;
+    background-color: var(--b-middle);
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+  }
+
+  &-example {
+    width: 70px;
+    height: 70px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+/*.advance {
   padding-bottom: 0;
 }
 
@@ -50,3 +95,4 @@
 .works-box {
   display: flex;
 }
+*/
