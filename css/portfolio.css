@@ -673,9 +673,11 @@ a.accent::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-bottom: 50px;
 }
 .filter-item:not(:last-child) {
@@ -687,32 +689,49 @@ a.accent::after {
   color: var(--txt-dark);
   font-weight: 500;
   padding: 6px 22px;
-  -webkit-transition: color 1s var(--timer);
-  transition: color 1s var(--timer);
-  -webkit-transition: background-color 1s var(--timer);
-  transition: background-color 1s var(--timer);
-}
-.btn-portfolio:hover {
-  background-color: var(--b-blue);
-  color: var(--txt-light);
-  border: none;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transform: opasity;
-          transform: opasity;
-}
-.btn-portfolio:focus {
-  background-color: var(--b-blue);
-  color: var(--txt-light);
-  border: none;
-  outline: 1px solid #757575;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transform: opasity;
-          transform: opasity;
+  margin-bottom: 15px;
 }
 
+/*.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &-item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.btn-portfolio {
+  background-color: var(--b-middle);
+  color: var(--txt-dark);
+  font-weight: 500;
+  padding: 6px 22px;
+
+  transition: color 1s var(--timer);
+  transition: background-color 1s var(--timer);
+
+  &:hover {
+    background-color: var(--b-blue);
+    color: var(--txt-light);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transform: opasity;
+  }
+
+  &:focus {
+    background-color: var(--b-blue);
+    color: var(--txt-light);
+    border: none;
+    outline: 1px solid #757575;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transform: opasity;
+  }
+}
+*/
 :root {
   /*baclgraund color*/
   --b-dark: #2f303a;
@@ -1040,7 +1059,7 @@ a.accent::after {
   width: 100%;
 }
 
-.btn-follow-mailing {
+.svg-position {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
