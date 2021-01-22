@@ -1,5 +1,10 @@
 @import "../utils/variables";
 
+.advance.container {
+  display: flex;
+  justify-content: center;
+}
+
 .description {
   font-weight: normal;
   font-size: 14px;
@@ -19,15 +24,11 @@
 }
 
 .principle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 450px;
+  width: 100%;
   &-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
     height: 120px;
     background-color: var(--b-middle);
     border-radius: 4px;
