@@ -1,6 +1,7 @@
 @import "../utils/variables";
 
 .btn {
+  display: flex;
   background-color: var(--b-blue);
   font-family: var(--main-font);
   font-weight: bold;

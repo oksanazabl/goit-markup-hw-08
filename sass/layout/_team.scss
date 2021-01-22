@@ -49,6 +49,13 @@
   margin-bottom: 16px;
 }
 
+.about {
+  &__list-picture,
+  &__team-img {
+    width: 100%;
+  }
+}
+
 /*.team {
   background-color: var(--b-middle);
   min-height: 648px;
