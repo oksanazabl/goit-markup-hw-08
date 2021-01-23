@@ -114,29 +114,48 @@
   display: flex;
   fill: var(--txt-light);
 }
-/*.footer {
-  background-color: var(--b-dark);
-  min-height: 252px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 
-  & .container {
-    align-items: flex-start;
-    display: flex;
-    justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .footer {
+    min-height: 463px;
+
+    & .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  .contakt-box {
+    width: 232px;
+    margin-left: 76px;
   }
 
-  &-address {
-    font-weight: normal;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    margin-top: 20px;
+  .following-box {
+    margin-right: 89px;
+    margin-top: 5px;
   }
 
-  & .social-list-icon {
-    fill: var(--white);
+  .mailing-box {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    min-height: 252px;
+
+    & .container {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-address {
+      margin-bottom: 0;
+    }
 
     .social-list-link:hover &,
     .social-list-link:focus & {
@@ -144,151 +163,127 @@
 
       transform: opasity;
     }
-  }
 
-  & .social-list-link {
-    background-color: var(--dark-background);
+    & .social-list-link {
+      &:hover {
+        background-color: var(--accent-background);
 
-    &:hover {
-      background-color: var(--accent-background);
+        transform: opasity;
+      }
+
+      &:focus {
+        background-color: var(--accent-background);
+        outline: 1px solid #757575;
+
+        transform: opasity;
+      }
+    }
+
+    .contakt-box {
+      width: 231px;
+    }
+
+    .link {
+      &-addres {
+        transition: color 250ms var(--timer);
+
+        &:hover {
+          color: var(--txt-bleu);
+
+          transform: opasity;
+        }
+
+        &:focus {
+          color: var(--txt-bleu);
+          outline: 1px solid #757575;
+
+          transform: opasity;
+        }
+      }
+
+      &-contact {
+        &:hover {
+          color: var(--txt-bleu);
+
+          transform: opasity;
+        }
+
+        &:focus {
+          color: var(--txt-bleu);
+          outline: 1px solid #757575;
+
+          transform: opasity;
+        }
+      }
+    }
+
+    .list-element:not(:last-child) {
+      margin-bottom: 9px;
+    }
+
+    .following-box {
+      margin-bottom: 0;
+      margin-top: 12px;
+
+      width: 206px;
+    }
+
+    .form-contact {
+      position: relative;
+    }
+
+    .mailing {
+      &-input {
+        width: 358px;
+        height: 50px;
+        background-color: var(--b-dark);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        margin-right: 12px;
+        padding-left: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &:focus {
+          outline: none;
+          color: var(--txt-grey);
+          border: 1px solid var(--accent-background);
+        }
+      }
+      &-box {
+        display: flex;
+        flex-direction: column;
+        margin: 12px 0 0 0;
+
+        width: 570px;
+
+        & .btn {
+          display: flex;
+          width: 200px;
+          height: 50px;
+          padding: 10px 28px;
+          color: var(--white);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+          transition: color 250ms var(--timer);
+        }
+      }
+    }
+
+    .btn-follow-mailing:focus,
+    .btn-follow-mailing:hover {
+      cursor: pointer;
+      color: var(--txt-dark);
 
       transform: opasity;
     }
 
-    &:focus {
-      background-color: var(--accent-background);
-      outline: 1px solid #757575;
-
-      transform: opasity;
-    }
-  }
-}
-
-.contakt-box {
-  display: flex;
-  flex-direction: column;
-  width: 231px;
- 
-}
-
-.link {
-  &-addres {
-    color: var(--txt-light);
-
-    transition: color 250ms var(--timer);
-
-    &:hover {
-      color: var(--txt-bleu);
-
-      transform: opasity;
-    }
-
-    &:focus {
-      color: var(--txt-bleu);
-      outline: 1px solid #757575;
-
-      transform: opasity;
-    }
-  }
-
-  &-contact {
-    color: rgba(255, 255, 255, 0.6);
-
-    transition: color 250ms var(--timer);
-
-    &:hover {
-      color: var(--txt-bleu);
-
-      transform: opasity;
-    }
-
-    &:focus {
-      color: var(--txt-bleu);
-      outline: 1px solid #757575;
-
-      transform: opasity;
-    }
-  }
-}
-
-.list-element:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.following-box {
-  display: flex;
-  flex-direction: column;
-  margin-top: 12px;
-  
-  width: 206px;
-}
-
-.follow-mailing {
-  color: var(--txt-light);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.form-contact {
-  display: flex;
-  position: relative;
-}
-
-.mailing {
-  &-input {
-    width: 358px;
-    height: 50px;
-    background-color: var(--b-dark);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    margin-right: 12px;
-    padding-left: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    &:focus {
-      outline: none;
-      color: var(--txt-grey);
-      border: 1px solid var(--accent-background);
-    }
-  }
-  &-box {
-    display: flex;
-    flex-direction: column;
-    margin-top: 12px;
-    width: 570px;
-
-    & .btn {
+    .icon-send-fly {
+      position: absolute;
+      right: 28px;
+      top: 13px;
       display: flex;
-      width: 200px;
-      height: 50px;
-      padding: 10px 28px;
-      color: var(--white);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-      transition: color 250ms var(--timer);
+      fill: var(--txt-light);
     }
   }
 }
-
-.btn-follow-mailing:focus,
-.btn-follow-mailing:hover {
-  cursor: pointer;
-  color: var(--txt-dark);
-
-  transform: opasity;
-}
-
-.icon-send-fly {
-  position: absolute;
-  right: 28px;
-  top: 13px;
-  display: flex;
-  fill: var(--txt-light);
-}
-*/
