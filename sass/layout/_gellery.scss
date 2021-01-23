@@ -1,6 +1,88 @@
 @import "../utils/variables";
 
 .work-example {
+  margin-top: 30px;
+}
+
+.portfolio {
+  &-title {
+    color: var(--txt-dark);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &-description {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--txt-grey);
+    margin-top: 4px;
+  }
+
+  &-card {
+    display: flex;
+    margin-bottom: 30px;
+    min-height: 404px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 4px 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--txt-light);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  transform: translateY(0);
+  transition: transform 250ms var(--timer);
+
+  &-box {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  .ecxample-card:hover &,
+  .ecxample-card:focus & {
+    transform: translateY(-100%);
+  }
+}
+
+.ecxample-card {
+  display: block;
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-content {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/*
+.work-example {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc((100%-60px) / 3);
@@ -108,3 +190,4 @@
     transform: translateY(-100%);
   }
 }
+*/
