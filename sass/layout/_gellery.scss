@@ -5,6 +5,10 @@
 }
 
 .portfolio {
+  &about__list-picture {
+    width: 100%;
+    max-width: 450px;
+  }
   &-title {
     color: var(--txt-dark);
     font-style: normal;
@@ -102,10 +106,10 @@
   }
 
   .portfolio {
-    /*&.about__list-picture {
+    &.about__list-picture {
       width: 370px;
       height: 294px;
-    }*/
+    }
     &-card {
       margin-right: 30px;
 

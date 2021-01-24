@@ -15,40 +15,55 @@
 
 <body>
     <!--Шапка страницы-->
-    <!--<header class="head">
-        <div class="container">
+    <header class="head">
+        <div class="container ">
+
+
             <nav class="nav">
                 <a href="./index.html" lang="en" class="logo link">Web<span class="logo-dark">Studio</span></a>
-                <ul class="menu-links list">
-                    <li class="list nav-listitems">
-                        <a href="./index.html" class="link-items link">Студия</a>
-                    </li>
-                    <li class="list nav-listitems">
-                        <a href="./portfolio.html" class="link-items accent link">Портфолио</a>
-                    </li>
-                    <li class="list nav-listitems">
-                        <a href="#" class="link-items link">Контакты</a>
-                    </li>
-                </ul>
+                <div class="menu-container" data-menu>
+                    <ul class="menu-links navigation list">
+                        <li class="list nav-listitems">
+                            <a href="./index.html" class="link-items link">Студия</a>
+                        </li>
+                        <li class="list nav-listitems">
+                            <a href="./portfolio.html" class="link-items accent  link">Портфолио</a>
+                        </li>
+                        <li class="list nav-listitems">
+                            <a href="#" class="link-items link">Контакты</a>
+                        </li>
+                    </ul>
+
+
+                    <address class="nav-address">
+                        <ul class="menu-links list">
+                            <li class="list nav-listitems">
+                                <a href="email:info@devstudio.com" class="address link">
+                                    <svg class="link-icon" width="12" height="16">
+                                        <use href="./images/sprite.svg#icon-mail"></use>
+                                    </svg>info@devstudio.com</a>
+                            </li>
+                            <li class="list nav-listitems">
+                                <a href="tel:+3800961111111" class="address link">
+                                    <svg class="link-icon" width="10" height="15">
+                                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                                    </svg>+380 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <button type="button" class="menu-button " aria-expanded="false" data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного мкню">
+                        <use class="icon-cross" href="./images/sprite.svg#icon-close_40px"></use>
+                        <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>
             </nav>
-            <address class="nav-address">
-                <ul class="menu-links list">
-                    <li class="list nav-listitems">
-                        <a href="email:info@devstudio.com" class="address link">
-                            <svg class="link-icon">
-                                <use href="./images/sprite.svg#icon-mail"></use>
-                            </svg>info@devstudio.com</a>
-                    </li>
-                    <li class="list nav-listitems">
-                        <a href="tel:+3800961111111" class="address link">
-                            <svg class="link-icon">
-                                <use href="./images/sprite.svg#icon-smartphone"></use>
-                            </svg>+380 096 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
+
+
+
         </div>
-    </header>-->
+    </header>
     <main>
         <h1 class="visually-hidden">Портфолио</h1>
         <!--меню портфолио-->
@@ -319,7 +334,7 @@
     </main>
     <footer class="footer ">
         <div class="container">
-            <!--contact box-->
+            <!--contact box -->
             <div class="contakt-box">
                 <a href="./index.html" lang="en" class="logo link">Web<span class="logo-white link">Studio</span></a>
 
@@ -339,7 +354,7 @@
                     </ul>
                 </address>
             </div>
-            <!--add us in social media-->
+            <!--add us in social media -->
             <div class="following-box">
                 <span class="follow-mailing">присоединяйтесь</span>
                 <ul class="social-list list">
@@ -378,20 +393,22 @@
                 </ul>
 
             </div>
-            <!--add mailing-->
+            <!--add mailing -->
             <div class="mailing-box">
                 <span class="follow-mailing">Подпишитесь на рассылку</span>
                 <form class="form-contact">
                     <input type="email" name="email" class="mailing-input" placeholder="Email" />
-                    <button type="submit" class="btn btn-follow-mailing">Подписаться</button>
-                    <svg class="icon-send-fly" width="24" height="24">
-                        <use href="./images/sprite.svg#icon-send-fly"></use>
-                    </svg>
+                    <div class="svg-position"><button type="submit" class="btn btn-follow-mailing">Подписаться</button>
+                        <svg class="icon-send-fly" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-send-fly"></use>
+                        </svg>
+                    </div>
                 </form>
             </div>
         </div>
     </footer>
 
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
