@@ -654,6 +654,20 @@ img {
   --timer: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: yellowgreen;
+  padding: 20px;
+  display: none;
+}
+.menu-container .is-open {
+  display: block;
+}
+
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -681,6 +695,7 @@ img {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #eeeeee;
+  position: relative;
 }
 .head .container {
   display: -webkit-box;
@@ -689,7 +704,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 .head .logo {
   margin-right: 93px;
