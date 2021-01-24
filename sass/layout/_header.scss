@@ -6,7 +6,7 @@
   left: 0;
   width: 100%;
   text-align: center;
-  background-color: yellowgreen;
+
   padding: 20px;
   display: none;
   z-index: 10;
@@ -60,11 +60,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
-
-  .nav {
+  .menu-container {
+    display: block;
     display: flex;
     align-items: center;
 
@@ -75,6 +72,9 @@
         margin-right: 50px;
       }
     }
+  }
+  .menu-button {
+    display: none;
   }
 
   .menu-links {
