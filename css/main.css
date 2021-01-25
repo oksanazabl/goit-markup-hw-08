@@ -722,19 +722,6 @@ picture {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-.menu-links:last-child {
-  margin-top: 0;
-}
-
-.nav-address .nav-listitems:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.navigation .nav-listitems:not(:last-child) {
-  margin-bottom: 40px;
 }
 
 .link-items {
@@ -773,7 +760,6 @@ picture {
   position: relative;
 }
 
-/*
 a.accent::after {
   content: "";
   position: absolute;
@@ -781,9 +767,9 @@ a.accent::after {
   height: 4px;
   top: 26px;
   border-radius: 4px;
-
   background-color: var(--b-blue);
-}*/
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
     position: absolute;
@@ -793,12 +779,31 @@ a.accent::after {
     display: none;
     border-top: 1px solid #ececec;
   }
+
+  .menu-links {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .menu-links:last-child {
+    margin-top: 0;
+  }
+
+  .nav-address .nav-listitems:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .navigation .nav-listitems:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .nav {
     height: 80px;
     padding-top: 24px;
     padding-bottom: 25px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -931,15 +936,6 @@ a.accent::after {
             transform: opasity;
   }
 
-  .nav-address .nav-listitems {
-    margin-bottom: 0;
-  }
-
-  .navigation .nav-listitems {
-    margin-bottom: 0;
-  }
-
-  /*
   .accent {
     color: var(--txt-bleu);
     position: relative;
@@ -952,13 +948,15 @@ a.accent::after {
     height: 4px;
     top: 45px;
     border-radius: 4px;
-
     background-color: var(--b-blue);
   }
 
   .nav-address.nav-listitems {
-    flex-direction: column;
-  }*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 :root {
   /*baclgraund color*/
@@ -1873,7 +1871,7 @@ a.accent::after {
   fill: var(--txt-light);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     min-height: 463px;
   }
@@ -1915,10 +1913,6 @@ a.accent::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1975,12 +1969,29 @@ a.accent::after {
     margin-bottom: 9px;
   }
   .footer .following-box {
-    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 12px;
+    /*margin-right: 93px;*/
     width: 206px;
   }
   .footer .form-contact {
     position: relative;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .footer .mailing-input {
     width: 358px;
@@ -2002,10 +2013,6 @@ a.accent::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin: 12px 0 0 0;
     width: 570px;
   }
