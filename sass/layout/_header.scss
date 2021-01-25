@@ -9,10 +9,6 @@
   & .logo {
     margin-right: 93px;
   }
-
-  & .nav-address {
-    margin-left: auto;
-  }
 }
 .nav {
   height: 60px;
@@ -24,9 +20,6 @@
   &-container {
     width: 100%;
     text-align: center;
-    background-color: #ffffff;
-    border-top: 1px solid #ececec;
-
     display: none;
     z-index: 10;
     display: flex;
@@ -110,7 +103,7 @@
   color: var(--txt-bleu);
   position: relative;
 }
-
+/*
 a.accent::after {
   content: "";
   position: absolute;
@@ -120,21 +113,37 @@ a.accent::after {
   border-radius: 4px;
 
   background-color: var(--b-blue);
-}
+}*/
+
 @media screen and (max-width: 767px) {
   .menu-container {
     position: absolute;
     top: 100%;
     left: 0;
-
+    background-color: #ffffff;
     display: none;
+    border-top: 1px solid #ececec;
   }
 }
 
 @media screen and (min-width: 768px) {
   .nav {
+    height: 80px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
     display: flex;
-    align-items: center;
+  }
+
+  .head {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ececec;
+    position: relative;
+
+    & .logo {
+      margin-right: 88px;
+    }
   }
   .menu {
     &-container {
@@ -144,9 +153,6 @@ a.accent::after {
       &-listitems {
         display: flex;
         align-items: center;
-        &:not(:last-child) {
-          margin-right: 50px;
-        }
       }
     }
     &-button {
@@ -155,8 +161,22 @@ a.accent::after {
 
     &-links {
       display: flex;
+
+      &.navigation {
+        align-items: center;
+      }
     }
   }
+
+  .menu-links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .link {
     &-items {
       color: var(--txt-dark);
@@ -230,6 +250,14 @@ a.accent::after {
     }
   }
 
+  .nav-address .nav-listitems {
+    margin-bottom: 0;
+  }
+  .navigation .nav-listitems {
+    margin-bottom: 0;
+  }
+
+  /*
   .accent {
     color: var(--txt-bleu);
     position: relative;
@@ -245,4 +273,8 @@ a.accent::after {
 
     background-color: var(--b-blue);
   }
+
+  .nav-address.nav-listitems {
+    flex-direction: column;
+  }*/
 }
