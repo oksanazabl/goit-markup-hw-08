@@ -39,6 +39,7 @@
   }
 
   .btn-portfolio {
+    margin-bottom: 0;
     &:focus {
       background-color: var(--b-blue);
       color: var(--txt-light);

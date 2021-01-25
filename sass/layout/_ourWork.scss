@@ -7,8 +7,7 @@
 }
 @media screen and (min-width: 1200px) {
   .our_work {
-    display: contents;
-    flex-direction: row;
+    display: block;
   }
   .secodary-title {
     color: var(--txt-dark);

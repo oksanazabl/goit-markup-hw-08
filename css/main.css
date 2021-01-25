@@ -1649,6 +1649,7 @@ a.accent::after {
   }
   .hero-descr {
     margin-top: 207px;
+    padding-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1775,6 +1776,11 @@ a.accent::after {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .description-title {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .principle {
     width: 354px;
@@ -1852,11 +1858,7 @@ a.accent::after {
 }
 @media screen and (min-width: 1200px) {
   .our_work {
-    display: contents;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: block;
   }
 
   .secodary-title {
@@ -2208,6 +2210,7 @@ a.accent::after {
   }
   .client-icon {
     width: 170px;
+    margin-bottom: 0;
   }
   .client-icon:not(:last-child) {
     margin-right: 30px;
@@ -2540,6 +2543,9 @@ a.accent::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2581,6 +2587,9 @@ a.accent::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin: 12px 0 0 0;
     width: 570px;
   }
