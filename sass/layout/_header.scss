@@ -316,6 +316,7 @@ a.accent::after {
 
   .menu-links {
     display: flex;
+    flex-direction: row;
   }
   .navigation {
     margin-right: 305px;
