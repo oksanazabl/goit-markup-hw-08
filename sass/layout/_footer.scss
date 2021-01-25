@@ -155,6 +155,7 @@
 
     &-address {
       margin-bottom: 0;
+      align-items: flex-start;
     }
 
     .social-list-link:hover &,
@@ -180,6 +181,7 @@
     }
 
     .contakt-box {
+      align-items: flex-start;
       width: 231px;
     }
 
@@ -217,7 +219,11 @@
       }
     }
 
-    .list-element:not(:last-child) {
+    .list-element {
+      align-items: flex-start;
+      display: flex;
+    }
+    &:not(:last-child) {
       margin-bottom: 9px;
     }
 

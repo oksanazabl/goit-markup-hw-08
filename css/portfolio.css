@@ -813,6 +813,144 @@ a.accent::after {
             flex-direction: column;
   }
 }
+@media screen and (min-width: 1200px) {
+  .head {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #eeeeee;
+  }
+  .head .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .head .logo {
+    margin-right: 93px;
+  }
+  .head .nav-address {
+    margin-left: auto;
+  }
+
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-listitems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-listitems:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .menu-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .navigation {
+    margin-right: 305px;
+  }
+
+  .link-items {
+    color: var(--txt-dark);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: color 250ms var(--timer);
+    transition: color 250ms var(--timer);
+  }
+  .link-items:hover {
+    color: var(--txt-bleu);
+    -webkit-transform: opasity;
+            transform: opasity;
+  }
+  .link-items:focus {
+    color: var(--txt-bleu);
+    outline: 1px solid #757575;
+    -webkit-transform: opasity;
+            transform: opasity;
+  }
+  .link-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-color: var(--light-background);
+    fill: var(--txt-grey);
+    margin-right: 10px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+    -webkit-transition: fill 250ms var(--timer);
+    transition: fill 250ms var(--timer);
+  }
+
+  .address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: var(--txt-grey);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    -webkit-transition: color 250ms var(--timer);
+    transition: color 250ms var(--timer);
+  }
+  .address:focus {
+    color: var(--txt-bleu);
+    outline: 1px solid #757575;
+    -webkit-transform: opasity;
+            transform: opasity;
+  }
+  .address:hover {
+    color: var(--txt-bleu);
+    -webkit-transform: opasity;
+            transform: opasity;
+  }
+  .address:hover .link-icon, .address:focus .link-icon {
+    fill: var(--txt-bleu);
+    color: var(--txt-bleu);
+    outline: none;
+    -webkit-transform: opasity;
+            transform: opasity;
+  }
+
+  .accent {
+    color: var(--txt-bleu);
+    position: relative;
+  }
+
+  a.accent::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 45px;
+    border-radius: 4px;
+    background-color: var(--b-blue);
+  }
+}
 :root {
   /*baclgraund color*/
   --b-dark: #2f303a;
@@ -1367,6 +1505,9 @@ a.accent::after {
   }
   .footer-address {
     margin-bottom: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .social-list-link:hover .footer, .social-list-link:focus .footer {
     fill: var(--white);
@@ -1385,6 +1526,9 @@ a.accent::after {
             transform: opasity;
   }
   .footer .contakt-box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 231px;
   }
   .footer .link-addres {
@@ -1413,7 +1557,15 @@ a.accent::after {
     -webkit-transform: opasity;
             transform: opasity;
   }
-  .footer .list-element:not(:last-child) {
+  .footer .list-element {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer:not(:last-child) {
     margin-bottom: 9px;
   }
   .footer .following-box {
