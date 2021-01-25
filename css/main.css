@@ -1617,6 +1617,15 @@ a.accent::after {
     background-position: center;
   }
 }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .hero .container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main/hero_tablet@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/hero_tablet@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: 768px 400px;
+    background-position: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     display: -webkit-box;
@@ -1635,8 +1644,8 @@ a.accent::after {
     min-height: 600px;
     max-width: 1600px;
     background-color: var(--b-dark);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main/hero_desk.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/hero_desk.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-box-orient: vertical;
@@ -1698,6 +1707,15 @@ a.accent::after {
     cursor: pointer;
     -webkit-transform: opasity;
             transform: opasity;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero .container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main/hero_desk@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/hero_desk@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px 600px;
+    background-position: center;
   }
 }
 :root {
