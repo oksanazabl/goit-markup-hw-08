@@ -102,7 +102,22 @@ a.accent::after {
 
   background-color: var(--b-blue);
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .head-address {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 294px;
+    margin-right: 84px;
+  }
+  .nav-address .nav-listitems:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (max-width: 767px) {
   .menu-container {
     position: absolute;
@@ -151,11 +166,6 @@ a.accent::after {
     &-container {
       display: flex;
       align-items: center;
-
-      &-listitems {
-        display: flex;
-        align-items: center;
-      }
     }
     &-button {
       display: none;
@@ -173,7 +183,6 @@ a.accent::after {
   .menu-links {
     align-items: center;
     display: flex;
-    flex-direction: row;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -183,7 +192,7 @@ a.accent::after {
     &-items {
       color: var(--txt-dark);
       font-weight: 500;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 1.14;
       letter-spacing: 0.02em;
       display: flex;
@@ -223,7 +232,7 @@ a.accent::after {
     color: var(--txt-grey);
     font-weight: 500;
     font-style: normal;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
